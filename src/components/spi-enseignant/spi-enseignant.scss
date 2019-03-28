@@ -1,0 +1,12 @@
+@import "../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../node_modules/bulma/sass/elements/table.sass";
+@import "../../../node_modules/bulma/sass/layout/hero.sass";
+.home{
+  background-image: url("../../assets/home.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+}
+
+

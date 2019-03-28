@@ -1,0 +1,36 @@
+
+
+
+@import "../../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../../node_modules/bulma/sass/elements/form.sass";
+@import "../../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../../node_modules/bulma/sass/elements/table.sass";
+@import "../../../../node_modules/bulma/sass/layout/hero.sass";
+
+
+
+
+
+.form-search{
+  cursor: pointer;
+}
+.form-search .green {
+  background-color: $green;
+}
+.form-search .green .title {
+  color: findColorInvert($green);
+}
+.form-search .green .subtitle {
+  color: findColorInvert($green);
+}
+
+.promo{
+  font-size: 25px  !important;
+  font-weight: bold !important;
+  color:hsl(217, 71%, 53%);
+}
+
+
+

@@ -1,0 +1,34 @@
+@import "../../../node_modules/bulma/sass/elements/table.sass";
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+@import"../../../node_modules/bulma/sass/components/message.sass";
+@import"../../../node_modules/bulma/sass/elements/form.sass";
+@import"../../../node_modules/bulma/sass/elements/title.sass";
+@import"../../../node_modules/bulma/sass/elements/box.sass";
+@import"../../../node_modules/bulma/sass/elements/icon.sass";
+@import"../../../node_modules/bulma/sass/components/modal.sass";
+@import "../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../node_modules/bulma/sass/layout/hero.sass";
+.title{
+  margin-top: 1cm;
+  text-align: center;
+}
+.columns {
+  margin-top: 7vh;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.input{
+  width: 450px;
+}
+.red {
+  color: red;
+}
+.email{
+  width: 291px;
+}
+
+
+#upper{
+  font-size: 20px;
+  text-transform: uppercase;
+}
