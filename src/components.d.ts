@@ -221,9 +221,6 @@ export namespace Components {
     'history'?: RouterHistory;
   }
 
-  interface EvaeCoupleQualificatif {}
-  interface EvaeCoupleQualificatifAttributes extends StencilHTMLAttributes {}
-
   interface EvaeEtudiants {
     'etudiants': Etudiant[];
     'formation': any;
@@ -244,9 +241,6 @@ export namespace Components {
     'history'?: RouterHistory;
     'match'?: MatchResults;
   }
-
-  interface EvaeQuestion {}
-  interface EvaeQuestionAttributes extends StencilHTMLAttributes {}
 
   interface EvaluationList {}
   interface EvaluationListAttributes extends StencilHTMLAttributes {}
@@ -279,6 +273,12 @@ export namespace Components {
     'history'?: RouterHistory;
     'promotions'?: Promotion[];
   }
+
+  interface EvaeQualificatif {}
+  interface EvaeQualificatifAttributes extends StencilHTMLAttributes {}
+
+  interface EvaeQuestion {}
+  interface EvaeQuestionAttributes extends StencilHTMLAttributes {}
 
   interface PageNotFound {}
   interface PageNotFoundAttributes extends StencilHTMLAttributes {}
@@ -321,14 +321,14 @@ declare global {
     'AuthentificationAuthen': Components.AuthentificationAuthen;
     'AddEtudForm': Components.AddEtudForm;
     'EvaeEtudiantAdd': Components.EvaeEtudiantAdd;
-    'EvaeCoupleQualificatif': Components.EvaeCoupleQualificatif;
     'EvaeEtudiants': Components.EvaeEtudiants;
     'EvaeFormEtudiants': Components.EvaeFormEtudiants;
-    'EvaeQuestion': Components.EvaeQuestion;
     'EvaluationList': Components.EvaluationList;
     'EvaeFormations': Components.EvaeFormations;
     'EvaeFormPromos': Components.EvaeFormPromos;
     'EvaePromtions': Components.EvaePromtions;
+    'EvaeQualificatif': Components.EvaeQualificatif;
+    'EvaeQuestion': Components.EvaeQuestion;
     'PageNotFound': Components.PageNotFound;
     'SpiEnseignant': Components.SpiEnseignant;
     'SpiHeader': Components.SpiHeader;
@@ -360,14 +360,14 @@ declare global {
     'authentification-authen': Components.AuthentificationAuthenAttributes;
     'add-etud-form': Components.AddEtudFormAttributes;
     'evae-etudiant-add': Components.EvaeEtudiantAddAttributes;
-    'evae-couple-qualificatif': Components.EvaeCoupleQualificatifAttributes;
     'evae-etudiants': Components.EvaeEtudiantsAttributes;
     'evae-form-etudiants': Components.EvaeFormEtudiantsAttributes;
-    'evae-question': Components.EvaeQuestionAttributes;
     'evaluation-list': Components.EvaluationListAttributes;
     'evae-formations': Components.EvaeFormationsAttributes;
     'evae-form-promos': Components.EvaeFormPromosAttributes;
     'evae-promtions': Components.EvaePromtionsAttributes;
+    'evae-qualificatif': Components.EvaeQualificatifAttributes;
+    'evae-question': Components.EvaeQuestionAttributes;
     'page-not-found': Components.PageNotFoundAttributes;
     'spi-enseignant': Components.SpiEnseignantAttributes;
     'spi-header': Components.SpiHeaderAttributes;
@@ -514,12 +514,6 @@ declare global {
     new (): HTMLEvaeEtudiantAddElement;
   };
 
-  interface HTMLEvaeCoupleQualificatifElement extends Components.EvaeCoupleQualificatif, HTMLStencilElement {}
-  var HTMLEvaeCoupleQualificatifElement: {
-    prototype: HTMLEvaeCoupleQualificatifElement;
-    new (): HTMLEvaeCoupleQualificatifElement;
-  };
-
   interface HTMLEvaeEtudiantsElement extends Components.EvaeEtudiants, HTMLStencilElement {}
   var HTMLEvaeEtudiantsElement: {
     prototype: HTMLEvaeEtudiantsElement;
@@ -530,12 +524,6 @@ declare global {
   var HTMLEvaeFormEtudiantsElement: {
     prototype: HTMLEvaeFormEtudiantsElement;
     new (): HTMLEvaeFormEtudiantsElement;
-  };
-
-  interface HTMLEvaeQuestionElement extends Components.EvaeQuestion, HTMLStencilElement {}
-  var HTMLEvaeQuestionElement: {
-    prototype: HTMLEvaeQuestionElement;
-    new (): HTMLEvaeQuestionElement;
   };
 
   interface HTMLEvaluationListElement extends Components.EvaluationList, HTMLStencilElement {}
@@ -560,6 +548,18 @@ declare global {
   var HTMLEvaePromtionsElement: {
     prototype: HTMLEvaePromtionsElement;
     new (): HTMLEvaePromtionsElement;
+  };
+
+  interface HTMLEvaeQualificatifElement extends Components.EvaeQualificatif, HTMLStencilElement {}
+  var HTMLEvaeQualificatifElement: {
+    prototype: HTMLEvaeQualificatifElement;
+    new (): HTMLEvaeQualificatifElement;
+  };
+
+  interface HTMLEvaeQuestionElement extends Components.EvaeQuestion, HTMLStencilElement {}
+  var HTMLEvaeQuestionElement: {
+    prototype: HTMLEvaeQuestionElement;
+    new (): HTMLEvaeQuestionElement;
   };
 
   interface HTMLPageNotFoundElement extends Components.PageNotFound, HTMLStencilElement {}
@@ -616,14 +616,14 @@ declare global {
     'authentification-authen': HTMLAuthentificationAuthenElement
     'add-etud-form': HTMLAddEtudFormElement
     'evae-etudiant-add': HTMLEvaeEtudiantAddElement
-    'evae-couple-qualificatif': HTMLEvaeCoupleQualificatifElement
     'evae-etudiants': HTMLEvaeEtudiantsElement
     'evae-form-etudiants': HTMLEvaeFormEtudiantsElement
-    'evae-question': HTMLEvaeQuestionElement
     'evaluation-list': HTMLEvaluationListElement
     'evae-formations': HTMLEvaeFormationsElement
     'evae-form-promos': HTMLEvaeFormPromosElement
     'evae-promtions': HTMLEvaePromtionsElement
+    'evae-qualificatif': HTMLEvaeQualificatifElement
+    'evae-question': HTMLEvaeQuestionElement
     'page-not-found': HTMLPageNotFoundElement
     'spi-enseignant': HTMLSpiEnseignantElement
     'spi-header': HTMLSpiHeaderElement
@@ -655,14 +655,14 @@ declare global {
     'authentification-authen': HTMLAuthentificationAuthenElement;
     'add-etud-form': HTMLAddEtudFormElement;
     'evae-etudiant-add': HTMLEvaeEtudiantAddElement;
-    'evae-couple-qualificatif': HTMLEvaeCoupleQualificatifElement;
     'evae-etudiants': HTMLEvaeEtudiantsElement;
     'evae-form-etudiants': HTMLEvaeFormEtudiantsElement;
-    'evae-question': HTMLEvaeQuestionElement;
     'evaluation-list': HTMLEvaluationListElement;
     'evae-formations': HTMLEvaeFormationsElement;
     'evae-form-promos': HTMLEvaeFormPromosElement;
     'evae-promtions': HTMLEvaePromtionsElement;
+    'evae-qualificatif': HTMLEvaeQualificatifElement;
+    'evae-question': HTMLEvaeQuestionElement;
     'page-not-found': HTMLPageNotFoundElement;
     'spi-enseignant': HTMLSpiEnseignantElement;
     'spi-header': HTMLSpiHeaderElement;

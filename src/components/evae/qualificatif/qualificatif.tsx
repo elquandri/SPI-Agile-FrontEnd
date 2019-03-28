@@ -1,8 +1,8 @@
 import { Component, State } from "@stencil/core";
 
 @Component({
-  tag: "evae-couple-qualificatif",
-  styleUrl: "evae-couple-qualificatif.scss"
+  tag: "evae-qualificatif",
+  styleUrl: "qualificatif.scss"
 })
 export class EvaeCouple {
     @State() couple : any ={};

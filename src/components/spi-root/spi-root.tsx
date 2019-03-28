@@ -50,7 +50,7 @@ export class SpiRoot {
               <stencil-route url="/evae/etudiants/add" component="add-etud-form" exact={true} />
               <stencil-route url="/evae/formations/promotions" component="evae-form-promos" exact={true} />
               <stencil-route url="/evae/promotions/etudiants" component="evae-form-etudiants" exact={true} />
-              <stencil-route url="/evae/coupleQ" component="evae-couple-qualificatif" exact={true} />
+              <stencil-route url="/evae/qualificatif" component="evae-qualificatif" exact={true} />
               <stencil-route url="/evae/question" component="evae-question" exact={true} />
               <stencil-route url="/evaluation" component="evaluation-list" exact={true} />
                 
