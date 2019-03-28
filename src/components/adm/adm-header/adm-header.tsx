@@ -80,7 +80,7 @@ export class AdmHeader {
               </span>
 
               <span class="navbar-item">
-                <stencil-route-link url='/evae/coupleQ'>
+                <stencil-route-link url='/evae/qualificatif'>
                      {sessionStorage.getItem('clé')? <span class="blanche title">
                       <i class="fas fa-star-half-alt"></i> 
                       Qualificatif

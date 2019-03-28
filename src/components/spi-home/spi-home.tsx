@@ -65,7 +65,7 @@ export class SpiHome {
                 </div>
 
                 <div class="content">
-                  <center> <stencil-route-link url='/evae/coupleQ'>
+                  <center> <stencil-route-link url='/evae/qualificatif'>
                     <button class="button is-danger">
                       <span>  QUALIFICATIF </span>
                     </button>
